@@ -5,19 +5,17 @@ import {
 } from "@/components/ui/terminal";
 
 const TerminalAnimation = () => (
-  <Terminal className="min-h-[200px]">
+  <Terminal className="min-h-[240px]">
     <TypingAnimation delay={1} duration={80}>
       $ whoami
     </TypingAnimation>
     <AnimatedSpan delay={1000}>james.chubbuck</AnimatedSpan>
-    <TypingAnimation delay={1200} duration={60}>
+    <TypingAnimation delay={1200} duration={40}>
       $ !$ --verbose
     </TypingAnimation>
-    <AnimatedSpan delay={2300}>
-      Inspiring engineer @ Stanford University. Reputedly
-    </AnimatedSpan>
-    <AnimatedSpan delay={2400}>
-      competent programmer and avid open source enthusiast.
+    <AnimatedSpan delay={1900}>
+      Inspiring engineer @ Stanford University. Reputedly competent programmer
+      and avid open source enthusiast.
     </AnimatedSpan>
   </Terminal>
 );

@@ -4,7 +4,6 @@ import { SwishIcon } from "@/components/icons/swish";
 import { Drone } from "lucide-react";
 
 export default function Projects() {
-  console.log("SwishIcon =", SwishIcon);
   return (
     <div className="flex flex-col items-center gap-6">
       <h2 className="text-2xl underline text-center">PROJECTS</h2>

@@ -11,7 +11,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "James Chubbuck",
-  description: "",
+  description: "Student @ Stanford University.",
 };
 
 export default function RootLayout({

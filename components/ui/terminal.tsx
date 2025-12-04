@@ -21,7 +21,7 @@ export const AnimatedSpan = ({
     initial={{ opacity: 0, y: -5 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.3, delay: delay / 1000 }}
-    className={cn("grid text-sm font-normal tracking-tight", className)}
+    className={cn("text-sm font-normal tracking-tight", className)}
     {...(props as any)}
   >
     {children}
@@ -101,7 +101,7 @@ export const Terminal = ({ children, className }: TerminalProps) => {
   return (
     <div
       className={cn(
-        "z-0 h-full  w-full max-w-lg rounded-xl border border-border bg-background mb-2",
+        "z-0 h-full  w-full max-w-lg border border-border bg-background mb-2",
         className,
       )}
     >
@@ -111,7 +111,9 @@ export const Terminal = ({ children, className }: TerminalProps) => {
         </div>
       </div>
       <pre className="p-4 flex-1">
-        <code className="grid gap-y-1 overflow-auto">{children}</code>
+        <code className="whitespace-pre-wrap break-words gap-y-1 overflow-auto">
+          {children}
+        </code>
       </pre>
     </div>
   );
